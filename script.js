@@ -112,4 +112,6 @@ heroBtns.addEventListener("click", gotoSpecific);
 container.addEventListener("mouseover", () => {
 	clearInterval(interval);
 });
-container.addEventListener("mouseleave", right);
+container.addEventListener("mouseleave", () => {
+	setTimeout(right, delay);
+});
